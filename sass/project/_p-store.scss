@@ -1,0 +1,98 @@
+.p-store {
+    padding: 40px 0;
+    background: linear-gradient(180deg, #fff 45%, #368c36 40%);
+
+    @include mq("lg") {
+    }
+
+    h3 {
+        text-align: center;
+    }
+    &__txt {
+        padding: 30px 16px;
+        @include mq("lg") {
+            text-align: center;
+        }
+    }
+
+    &-access {
+        &__imgArea {
+            margin: 24px 0;
+            background-image: url("img/tyaya_m.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center bottom;
+            width:100%;
+            height: 84vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            @include mq("lg") {
+                width:75%;
+            }
+        }
+        &__txtArea {
+            width: 90%;
+            padding: 30px 0;
+            position: relative;
+            margin: 0 auto;
+            background-color: rgba(255,255,255,0.8);
+
+            @include mq("lg") {
+                position: absolute;
+                width: 50%;
+                transform: translateX(-50%);
+                transform: translateY(-50%);
+                top: 50%;
+                left: 74%;
+                background-color: #fff;
+            }
+        }
+        &__detail {
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px 0;
+            border-bottom: 1px dotted #000;
+            p {
+                text-align: left;
+            }
+        }
+        &__btn {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 25px;
+            text-align: center;
+        }
+    }
+
+    &-cafe {
+        color: #fff;
+        h4 {
+            text-align: center;
+        }
+        &__menu {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 90%;
+            margin: 0 auto;
+            @include mq("lg") {
+                width: 85%;
+            }
+        }
+        &__item {
+            width: 47%;
+            @include mq("lg") {
+                width: 22%;
+            }
+            img {
+                height: 180px;
+                object-fit: cover;
+            }
+            p {
+                padding: 15px 0;
+            }
+        }
+    }
+}

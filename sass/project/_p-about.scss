@@ -1,0 +1,146 @@
+// .mask-2 {
+//     mask-image: url("img/mask2.png");
+//     -webkit-mask-image: url("img/mask2.png");
+//     mask-repeat: no-repeat;
+//     -webkit-mask-repeat: no-repeat;
+//     mask-position: 20%;
+//     -webkit-mask-position: 20%;
+//     mask-size: 0;
+//     -webkit-mask-size: 0;
+//     animation-duration: 1s;
+//   animation-fill-mode: both;
+//     animation: imageFadeIn 4s ease-in-out 1s forwards;
+// }
+
+.p-about {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include mq("md") {
+        padding-top: 130px;
+        padding-bottom: 40px;
+    }
+
+    &__wrapper {
+        // width: 90%;
+        // margin: 0 auto;
+    }
+    &-top {
+        @include mq("md") {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__imgArea {
+            & > img {
+                width: 90%;
+            }
+            @include mq("md") {
+                width: 50%;
+            }
+        }
+        &__flex{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            margin-left: 25%;
+            img {
+                width: 45%;
+            }
+        }
+    
+        &__txtArea {
+            position: relative;
+            padding: 0 16px;
+            @include mq("md") {
+                width: 43%;
+                padding-top: 90px;
+                padding-right: 12%;
+            }
+            h3 {
+                margin-top: 15px;
+                text-align: center;
+                @include mq("md") {
+                    padding-bottom: 70px;
+                    margin-top: 0;
+                    margin-left: -95px;
+                    text-align: left;
+                }
+            }
+            h4 {
+                text-align: center;
+                margin-top: 15px;
+                @include mq("md") {
+                    text-align-last: left;
+                    margin-top: 0;
+                }
+            }
+            p {
+                padding-top: 30px;
+                padding-bottom: 40px;
+                @include mq("md") {
+                    padding-top: 30px;
+                    padding-bottom: 40px;
+                }
+            }
+            img {
+                display: none;
+                @include mq("md") {
+                    display: block;
+                    position: absolute;
+                    top: -180px;
+                    left: 20%;
+                    z-index: -1;
+                    width: 80%;
+                }
+            }
+        }
+    }
+    &-bottom {
+        @include mq("md") {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            margin-top: 70px;
+        }
+        &__txtArea {
+            position: relative;
+            padding: 0 16px;
+            @include mq("md") {
+                width: 43%;
+                padding-top: 90px;
+                padding-left: 12%;
+                // padding-right: 2%;
+                // margin-left: 15%;
+            }
+            h4 {
+                text-align: center;
+                margin-top: 15px;
+                @include mq("md") {
+                    text-align-last: left;
+                    margin-top: 0;
+                }
+            }
+            p {
+                padding-top: 30px;
+                padding-bottom: 40px;
+                @include mq("md") {
+                    padding-top: 30px;
+                    padding-bottom: 40px;
+                }
+            }
+
+        }
+        &__imgArea {
+            margin-top: 40px;
+            @include mq("md") {
+                width: 50%;
+                margin-top: 0;
+            }
+        }
+    }
+    &__btn {
+        @include mq("md") {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}

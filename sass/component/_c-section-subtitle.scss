@@ -1,0 +1,6 @@
+.c-section__subtitle {
+    font-size: 1.3rem;
+    @include mq("md") {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,66 @@
+.p-header {
+    background-image: url("img/sp-main.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    height: 100vh;
+    color: $color-txt-white;
+    position: relative;
+    @include mq("lg") {
+        height: 790px;
+        background-image: url("img/main.jpg");
+
+    }
+    @include mq("xl") {
+
+    }
+    @include mq("xxl") {
+
+    }
+    &__logo {
+        width: 140px;
+        @include mq("xl") {
+            width: 240px;
+        }
+    }
+
+    &__txt{
+        // position: absolute;
+        // bottom: 12%;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: 64vh;
+        margin-left: 11vw;
+        @include mq("lg") {
+            // position: relative;
+            font-size: 38px;
+            writing-mode: vertical-rl;
+            margin-left: 68%;
+            margin-top: 2%;
+	        height: calc(100vh - #{$header-height-md});
+        }
+        @include mq("xl") {
+
+        }
+        @include mq("xxl") {
+
+        }
+    }
+}
+
+.is-active {
+    display: block;
+  
+    &--color {
+      background-color: #17557E;
+      color: #fff !important;
+      border: none;
+    }
+  }
+
+  .is-fixed {
+    position: fixed;
+    right: 8%;
+    top: 5%;
+  }

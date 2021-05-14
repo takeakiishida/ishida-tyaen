@@ -1,0 +1,195 @@
+.l-header {
+    width: 87%;
+    margin: 0 auto;
+    height: $header-height-sm;
+    position: relative;
+    padding-top: 35px;
+
+    @include mq("lg") {
+        width: 80%;
+        height: $header-height-md;
+        padding: 0;
+    }
+    // &--fixed {
+    //     z-index: 50000;
+    //     position: fixed;
+    //     top: 0;
+    // }
+
+    &--flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-nav {
+        display: none;
+        @include mq("xl") {
+            display: block;
+        }
+
+        &__menu {
+            &--flex {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        &__item {
+            margin-left: 50px;
+
+            a {
+                line-height: $header-height-md;
+                color: #fff;
+            }
+
+            &--contact {
+                position: relative;
+                background-color: #ED8700;
+                width: 150px;
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+                img {
+                    width: 32px;
+                    display: block;
+                    margin: 0 auto;
+                    padding-top: 10px;
+                }
+                p {
+                    line-height: normal;
+                    text-align: center;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    &-hamburger {
+        // position: fixed;
+        // right: 10%;
+        // top: 55px;
+        z-index: 99999;
+
+        &__area{
+            position: relative;
+            cursor: pointer;
+            width: 60px;
+            height: 60px;
+            border-radius: 3px;
+        }
+
+        &__line {
+            display: inline-block;
+            transition: all .4s;
+            position: absolute;
+            height: 2px;
+            border-radius: 2px;
+            background: #fff;
+            width: 70%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            &:nth-of-type(1) {
+                top:15px;
+            }
+            &:nth-of-type(2) {
+                top:25px;
+            }
+            &:nth-of-type(3) {
+                top:35px;
+            }
+            &:nth-of-type(3)::after {
+                content:"メニュー";
+                position: absolute;
+                top:5px;
+                color: #fff;
+                font-size: 0.2rem;
+                text-transform: uppercase;
+                width: 100%;
+
+            }
+        }
+        &__nav {
+            display: none;
+            &--flex {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        &__box {
+            width: 100%;
+            height: 33.3333333vh;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            @include mq("lg") {
+                width: 33.33333333%;
+                height: 100vh;
+            }        
+            &--eat {
+                background-image: url("img/mask_wagashi_m.jpg");
+            }
+            &--buy {
+                background-image: url("img/shopping.jpg");
+            }
+            &--know {
+                background-image: url("img/mask_bk_tyaba2.jpg");
+            }
+            &--flex {
+                display: flex;
+                align-items: center;
+                @include mq("lg") {
+                    display: block;
+                }  
+            }
+
+            li {
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    background-color: #fff;
+                    height: 1px;
+                    width: 15px;
+                    margin-right: 7px;
+                    vertical-align: middle;
+                }
+                a {
+                    color: #fff;
+                }
+            }
+        }
+        // 
+        &__inner {
+            width: 60%;
+            margin: 0% auto;
+            @include mq("lg") {
+                margin: 75% auto 0;
+            }  
+        }
+        // ハンバーガーメニュー内の各タイトル(買う、食べる、知る)
+        &__title {
+            text-align: left;
+            font-size: 2.5rem;
+            color: #fff;
+            @include mq("lg") {
+                text-align: center;
+            }  
+        }
+        // &__item {
+        //     text-align: center;
+        //     margin-top: 6%;
+        //     a {
+        //         color: $color-txt-white;
+        //     }
+        // }
+    }
+    // &-sns {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     margin: 10% auto;
+    //     width: 50%;
+    //     li {
+    //         width: 14%;
+    //     }
+    // }
+}

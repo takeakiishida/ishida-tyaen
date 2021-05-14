@@ -1,0 +1,171 @@
+.p-news {
+    @include mq("md") {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-titleWrapper {
+        padding: 30px 0;
+        background-color: #EBEBEB;
+        text-align: center;
+        @include mq("md") {
+            width: 20%;
+            writing-mode: vertical-rl;
+            text-align: left;
+        }
+    }
+    &-contentWrapper {
+        padding: 20px 16px;
+        background-color: #F3F3F3;
+        @include mq("md") {
+            width: 80%;
+            display: flex;
+           padding: 30px 0px;
+        }
+    }
+
+    &-wrapper {
+        @include mq("md") {
+            width: 73%;
+        }
+    }
+
+    &-article {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 17px;
+        @include mq("md") {
+            justify-content: space-between;
+        }
+
+        &__date {
+            width: 100px;
+            padding: 3px;
+            @include mq("md") {
+                width: 16%;
+                padding: 0;
+                text-align: center;
+            }
+        }
+
+        &__category {
+            text-align: center;
+            width: 100px;
+            color: #fff;
+            background-color: #000;
+            height: 50%;
+            @include mq("md") {
+                width: 15%;
+            }
+            a {
+
+                font-weight: bold;
+                display: block;
+                width: 25%;
+                margin-left: 10px;
+                padding: 3px;
+                @include mq("md") {
+                    width: 100%;
+                    margin-left: 0;
+                    padding: 0;
+                }
+            }
+        }
+
+        &__txt {
+            width: 100%;
+            margin-top: 5px;
+            @include mq("md") {
+                width: 62%;
+                margin-top: 0;
+            }
+            a {
+                color: #000;
+            }
+        }
+
+    } 
+    &-btn {
+        // margin-top: 30px;
+        @include mq("md") {
+            width: 15%;
+            // margin-left: 5%;
+            // margin-bottom: 0;
+            margin-top: 80px;
+        }
+    }
+    // お知らせ一覧のstyle
+    &-top {
+        background-image: url("img/mask_bk_tyaba2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right bottom;
+    
+        main {
+            background-color: #e8e8e8;
+        }
+    
+        &__title {
+            padding: 90px 0;
+            text-align: center;
+            font-size: 2rem;
+            color: $color-txt-white;
+            font-weight: bold;
+        }
+        &__wrapper {
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @include mq("md") {
+                width: 80%;
+            }
+        }
+        &__article {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 17px;
+            border-bottom: 1px solid #000;
+            @include mq("md") {
+                justify-content: space-between;
+            }
+        }
+        &__date {
+            width: 80px;
+            padding: 3px;
+            @include mq("md") {
+                width: 13%;
+                padding: 0;
+                text-align: center;
+            }
+        }
+    
+        &__category {
+            text-align: center;
+            width: 20%;
+            color: #fff;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include mq("md") {
+                width: 15%;
+            }
+        }
+    
+        &__txt {
+            width: 100%;
+            margin-top: 5px;
+            @include mq("md") {
+                width: 65%;
+                margin-top: 0;
+            }
+            a {
+                color: #000;
+            }
+        }
+    }
+}

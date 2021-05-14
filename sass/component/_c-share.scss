@@ -1,0 +1,33 @@
+/*シェアボタン*/
+.c-share {
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    h2 {
+        padding: 0;
+        border: none;
+        // color: var(--basecolor);
+        // font-size: var(--f5);
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    .mytwitter {
+        color: #1da1f2;
+    }
+    .myfacebook {
+        color: #3b5998;
+    }
+    a {
+        width: 49%;
+        padding: 10px;
+        border: solid 1px currentColor;
+        line-height: 1;
+        text-align: center;
+    }
+}
+.mypostlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

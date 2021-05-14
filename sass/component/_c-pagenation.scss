@@ -1,0 +1,35 @@
+.pnavi {
+    text-align: center;
+    margin-bottom: 40px;
+    &__wrapper {
+        display: inline-block;
+    }
+}
+
+.nav-links{
+    display:flex;
+ }
+.page-numbers{
+    display:inline-block;
+    margin-right:20px;
+    padding:10px 20px;
+    color:#333;
+    border-radius:3px;
+    box-shadow:0 3px 3px #999;
+    background:#fff;
+ }
+.current{
+    padding:10px 20px;
+    background: $color-main;
+    color:#fff;
+ }
+.prev,
+ .next{
+    background:transparent;
+    box-shadow:none;
+    color: $color-main;
+ }
+.dots{
+    background:transparent;
+    box-shadow:none;
+ }

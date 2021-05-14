@@ -1,0 +1,27 @@
+.c-section__title {
+    font-size: 2.0rem;
+    color: $color-base;
+    font-weight: bold;
+
+    &--gray {
+        color: #AD9D8F;
+        &::after {
+            background-color: #AD9D8F;
+        }
+    }
+
+    &--vertical {
+        @include mq("md") {
+            margin: 0 auto;
+            margin-right: 50%;
+        }
+    }
+}
+
+.c-section__txt {
+    text-align: center;
+
+    &--white{
+        color: #fff;
+    }
+}
