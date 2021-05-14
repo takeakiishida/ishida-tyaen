@@ -15,7 +15,7 @@
 
                             // ニュース用の背景画像を適用
                             // elseif( get_the_ID() == 8 || get_post_type() == 'post'): echo "p-news-top";
-                            elseif( get_query_var('post_type') == 'news' ): echo "p-blog-top";
+                            elseif( get_query_var('post_type') == 'news' ): echo "p-news-top";
 
                             // お問い合わせ用の背景画像を適用
                             elseif( get_the_ID() == 90): echo "p-contact-top";                        
